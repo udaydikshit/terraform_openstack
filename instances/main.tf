@@ -6,7 +6,7 @@ resource "openstack_compute_instance_v2" "instance_1" { #Resource block to creat
   flavor_name       = var.flavor_name
   key_pair        = var.key_name
   network {
-    name      = "External_Net" # name of the network to be used
+    name      = "" # name of the network to be used
   }
   security_groups = ["default"] #Security group name from the cloud
 
